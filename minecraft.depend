@@ -1,0 +1,112 @@
+# depslib dependency file v1.0
+1774192707 source:c:\users\utente\documents\progetti codeblock\minecraft\main.cpp
+	"generator.h"
+	"Player.h"
+	"InputHandler.h"
+	"CollisionHandler.h"
+	"MeshMondo.h"
+	"MouseInput.h"
+	<fstream>
+	<string>
+	<GL/freeglut.h>
+	<math.h>
+	<ctype.h>
+	<cstdio>
+	<iostream>
+	<filesystem>
+	<iomanip>
+	<GL/gl.h>
+
+1774096687 c:\freeglut-mingw\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1774096687 c:\freeglut-mingw\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1774096687 c:\freeglut-mingw\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1774096687 c:\freeglut-mingw\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1774194872 source:c:\users\utente\documents\progetti codeblock\minecraft\generator.cpp
+	<fstream>
+	<string>
+	"FastNoiseLite.h"
+	"generator.h"
+
+1774193789 c:\users\utente\documents\progetti codeblock\minecraft\generator.h
+	<string>
+
+1774122269 c:\users\utente\documents\progetti codeblock\minecraft\fastnoiselite.h
+	<cmath>
+
+1774172806 source:c:\users\utente\documents\progetti codeblock\minecraft\player.cpp
+	"Player.h"
+	<GL/glut.h>
+
+1774172732 c:\users\utente\documents\progetti codeblock\minecraft\player.h
+
+1774176024 source:c:\users\utente\documents\progetti codeblock\minecraft\inputhandler.cpp
+	"InputHandler.h"
+
+1774176169 c:\users\utente\documents\progetti codeblock\minecraft\inputhandler.h
+	<GL/glut.h>
+	<ctype.h>
+	"player.h"
+
+1774177550 source:c:\users\utente\documents\progetti codeblock\minecraft\collisionhandler.cpp
+	"CollisionHandler.h"
+	"generator.h"
+	<cmath>
+
+1774176402 c:\users\utente\documents\progetti codeblock\minecraft\collisionhandler.h
+
+1774182788 c:\users\utente\documents\progetti codeblock\minecraft\meshmondo.h
+
+1774192232 source:c:\users\utente\documents\progetti codeblock\minecraft\meshmondo.cpp
+	"MeshMondo.h"
+	"generator.h"
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1774192513 c:\users\utente\documents\progetti codeblock\minecraft\mouseinput.h
+
+1774192513 source:c:\users\utente\documents\progetti codeblock\minecraft\mouseinput.cpp
+	"MouseInput.h"
+	<GL/glut.h>
+	<cmath>
+
+1774193611 source:c:\users\utente\documents\progetti codeblock\minecraft\blocchi.cpp
+	"Blocchi.h"
+
+1774198165 c:\users\utente\documents\progetti codeblock\minecraft\blocchi.h
+	<string>
+	<vector>
+
+1774201776 source:c:\users\utente\documents\progetti codeblock\codeblocksmc\worldgenerator.cpp
+	"FastNoiseLite.h"
+	"WorldGenerator.h"
+	<vector>
+
+1774122269 c:\users\utente\documents\progetti codeblock\codeblocksmc\fastnoiselite.h
+	<cmath>
+
+1774201322 c:\users\utente\documents\progetti codeblock\codeblocksmc\worldgenerator.h
+	"FastNoiseLite.h"
+	<vector>
+
+1774202068 source:c:\users\utente\documents\progetti codeblock\codeblocksmc\main.cpp
+	"WorldGenerator.h"
+	<iostream>
+
