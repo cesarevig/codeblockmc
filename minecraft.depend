@@ -106,13 +106,14 @@
 	"FastNoiseLite.h"
 	<vector>
 
-1774257997 source:c:\users\utente\documents\progetti codeblock\codeblocksmc\main.cpp
+1774263937 source:c:\users\utente\documents\progetti codeblock\codeblocksmc\main.cpp
 	"WorldGenerator.h"
 	"GameApplication.hpp"
 	"MainMenu.hpp"
 	"MenuRenderer.hpp"
 	"MouseManager.hpp"
 	"KeyboardManager.hpp"
+	"PlayerMovement.hpp"
 	<iostream>
 	<string>
 	<functional>
@@ -131,7 +132,7 @@
 	<windows.h>
 	<GL/freeglut.h>
 
-1774257733 c:\users\utente\documents\progetti codeblock\codeblocksmc\menurenderer.hpp
+1774264792 c:\users\utente\documents\progetti codeblock\codeblocksmc\menurenderer.hpp
 	<string>
 
 1774257943 c:\users\utente\documents\progetti codeblock\codeblocksmc\mousemanager.hpp
@@ -152,12 +153,13 @@
 	"GameApplication.hpp"
 	<string>
 
-1774260410 source:c:\users\utente\documents\progetti codeblock\codeblocksmc\menurenderer.cpp
+1774264942 source:c:\users\utente\documents\progetti codeblock\codeblocksmc\menurenderer.cpp
 	<windows.h>
 	<GL/freeglut.h>
 	"MenuRenderer.hpp"
 	"GameApplication.hpp"
 	<string>
+	<GL/glut.h>
 
 1774256282 c:\users\utente\documents\progetti codeblock\codeblocksmc\mainmenu.hpp
 	<string>
@@ -173,4 +175,10 @@
 	<filesystem>
 	<algorithm>
 	<ctime>
+
+1774263682 source:c:\users\utente\documents\progetti codeblock\codeblocksmc\playermovement.cpp
+	"PlayerMovement.hpp"
+	<cmath>
+
+1774263662 c:\users\utente\documents\progetti codeblock\codeblocksmc\playermovement.hpp
 

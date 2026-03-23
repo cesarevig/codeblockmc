@@ -53,6 +53,8 @@
 		<Unit filename="MenuRenderer.hpp" />
 		<Unit filename="MouseManager.cpp" />
 		<Unit filename="MouseManager.hpp" />
+		<Unit filename="PlayerMovement.cpp" />
+		<Unit filename="PlayerMovement.hpp" />
 		<Unit filename="SavesCreator.cpp" />
 		<Unit filename="SavesCreator.hpp" />
 		<Unit filename="WorldGenerator.cpp" />

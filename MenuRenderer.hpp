@@ -5,6 +5,8 @@
 
 void display(); // Aggiungi questa riga
 
+void drawText(int x, int y, std::string text);
+
 // Funzione per disegnare i box di inserimento testo (Nome e Seed)
 void drawInputBox(int x, int y, int width, int height, std::string text, bool isActive);
 

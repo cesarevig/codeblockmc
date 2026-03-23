@@ -3,6 +3,7 @@
 #include "MenuRenderer.hpp"
 #include "GameApplication.hpp"
 #include <string>
+#include <GL/glut.h>
 
 void display() {
     // Pulisce lo schermo con il grigio scuro di Minecraft
@@ -31,10 +32,14 @@ void display() {
 
         // 2. Disegna i due campi che hai creato
         // Campo Nome (attivo se activeField == 1)
+        // Disegniamo la scritta "Nome del mondo" 20 pixel sopra il primo campo (150 - 20 = 130)
+        drawText(300, 140, "Nome del mondo");
         drawInputBox(300, 150, 200, 30, worldName, activeField == 1);
 
         // Campo Seme (attivo se activeField == 2)
-        drawInputBox(300, 210, 200, 30, worldSeed, activeField == 2);
+        // Disegniamo la scritta "Seme del mondo" 20 pixel sopra il secondo campo (210 - 20 = 190)
+        drawText(300, 220, "Seme del mondo");
+        drawInputBox(300, 230, 200, 30, worldSeed, activeField == 2);
 
         // Pulsante "Crea nuovo mondo" (Coordinate: x=300, y=300)
         drawButton(300, 300, 200, 30, "Crea nuovo mondo", false);
@@ -90,5 +95,16 @@ void drawButton(int x, int y, int width, int height, std::string label, bool isH
 
     for (char c : label) {
         glutBitmapCharacter(GLUT_BITMAP_9_BY_15, c);
+    }
+}
+
+void drawText(int x, int y, std::string text) {
+    // Imposta la posizione dove iniziare a scrivere
+    // Nota: in OpenGL 2D le coordinate potrebbero dover essere invertite a seconda del tuo setup
+    glRasterPos2i(x, y);
+
+    // Disegna ogni carattere della stringa uno alla volta
+    for (char c : text) {
+        glutBitmapCharacter(GLUT_BITMAP_8_BY_13, c);
     }
 }
