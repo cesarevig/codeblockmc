@@ -5,11 +5,20 @@
 #include <string>
 
 void display() {
+    // Pulisce lo schermo con il grigio scuro di Minecraft
+    glClearColor(0.25f, 0.25f, 0.25f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+    // Imposta la vista 2D (Ortho)
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluOrtho2D(0, 800, 600, 0); // Adatta ai pixel della tua finestra
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
     if (currentGameState == GameState::MAIN_MENU) {
-        // Disegna i pulsanti del menu principale
-        // drawButton(x, y, "Crea Nuovo Mondo");
+        drawButton(300, 200, 200, 30, "Crea nuovo mondo", false);
+        drawButton(300, 250, 200, 30, "Esci dal gioco", false);
     }
     else if (currentGameState == GameState::CREATE_WORLD_MENU) {
         // 1. Passa alla modalità 2D (Ortho)

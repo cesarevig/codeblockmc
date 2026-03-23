@@ -3,6 +3,8 @@
 
 #include <string>
 
+void display(); // Aggiungi questa riga
+
 // Funzione per disegnare i box di inserimento testo (Nome e Seed)
 void drawInputBox(int x, int y, int width, int height, std::string text, bool isActive);
 

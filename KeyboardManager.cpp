@@ -2,7 +2,7 @@
 #include "GameApplication.hpp"
 #include <string>
 
-void keyboard(unsigned char key, int x, int y) {
+void KeyboardHandler(unsigned char key, int x, int y) {
     if (activeField == 1) { // Nome
         if (key == 8 && !worldName.empty()) worldName.pop_back();
         else if (key >= 32) worldName += key;

@@ -8,6 +8,7 @@
 
 #include "WorldGenerator.h"
 #include "GameApplication.hpp"
+#include "MainMenu.hpp"
 #include "MenuRenderer.hpp"
 #include "MouseManager.hpp"
 #include "KeyboardManager.hpp"
@@ -19,11 +20,24 @@
 #include <GL/freeglut.h> // <--- INDISPENSABILE per OpenGL e GLUT
 #include <string>        // <--- INDISPENSABILE per std::string
 
-// Queste variabili tengono traccia di cosa succede
-GameState currentState = GameState::MAIN_MENU;
-WorldData newWorld;
 
-int main() {
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitWindowSize(800, 600);
+    glutCreateWindow("Minecraft Alpha 1.0.1 Clone");
+
+    // Registra la funzione display che sta in MenuRenderer.cpp
+    glutDisplayFunc(display);
+
+    // Registra anche mouse e tastiera
+    glutMouseFunc(mouse);
+    glutKeyboardFunc(KeyboardHandler);
+
+    glutMainLoop();
+    /*
+
+
     // 1. Configurazione Noise
     FastNoiseLite noise;
     noise.SetNoiseType(FastNoiseLite::NoiseType_Perlin);
@@ -49,6 +63,6 @@ int main() {
 
     void drawInputBox(int x, int y, int width, int height, std::string text, bool isActive);
 
-
+    */
     return 0;
 }
