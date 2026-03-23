@@ -42,6 +42,17 @@ void display() {
         // Pulsante "Annulla" (Coordinate: x=300, y=350)
         drawButton(300, 350, 200, 30, "Annulla", false);
 
+        if (showDuplicateError) {
+            glColor3f(1.0f, 0.0f, 0.0f); // Rosso Minecraft (errore)
+            std::string errorMsg = "Un mondo con questo nome esiste gia'!";
+            int textX = 400 - (errorMsg.length() * 4); // Centra il testo
+            glRasterPos2i(textX, 280); // Posizionalo tra i box e il tasto Crea
+
+            for (char c : errorMsg) {
+                glutBitmapCharacter(GLUT_BITMAP_9_BY_15, c);
+            }
+        }
+
         // 3. Torna alla modalità 3D (se necessario)
         glMatrixMode(GL_PROJECTION);
         glPopMatrix();

@@ -30,10 +30,14 @@ void mouse(int button, int state, int x, int y) {
 
             // CLICK SU "CREA NUOVO MONDO" (300-330)
             else if (x >= 300 && x <= 500 && y >= 300 && y <= 330) {
+                if (worldExists(worldName)) {
+                    showDuplicateError = true; // Attiva l'avviso a schermo
+                } else {
+                    showDuplicateError = false;
                     if (createWorldSave(worldName, worldSeed)) {
-                        currentGameState = GameState::IN_GAME; // Entra in gioco solo se il salvataggio è riuscito
+                        currentGameState = GameState::IN_GAME;
                     }
-                printf("Generazione mondo: %s con seed: %s\n", worldName.c_str(), worldSeed.c_str());
+                }
             }
 
             // CLICK SU "ANNULLA" (350-380)

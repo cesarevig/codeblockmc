@@ -14,6 +14,12 @@ std::string sanitizeName(std::string name) {
     return name;
 }
 
+bool worldExists(std::string name) {
+    std::string folderName = name;
+    std::replace(folderName.begin(), folderName.end(), ' ', '_');
+    return fs::exists("saves/" + folderName);
+}
+
 bool createWorldSave(std::string name, std::string seed) {
     std::string folderName = sanitizeName(name);
     std::string path = "saves/" + folderName;
@@ -44,5 +50,5 @@ bool createWorldSave(std::string name, std::string seed) {
     } catch (const std::exception& e) {
         std::cerr << "Errore creazione salvataggio: " << e.what() << std::endl;
     }
-    return false;
+    return true;
 }

@@ -3,6 +3,8 @@
 
 #include <string>
 
+extern bool showDuplicateError;
+
 // Definiamo in che "pagina" del gioco ci troviamo
 enum class GameState {
     MAIN_MENU,       // Schermata iniziale

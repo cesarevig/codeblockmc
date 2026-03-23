@@ -10,3 +10,5 @@ std::string worldSeed = "";
 // Partiamo con nessun campo selezionato (0)
 // o con il primo campo selezionato (1)
 int activeField = 0;
+
+bool showDuplicateError = false;
