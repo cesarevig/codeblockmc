@@ -43,6 +43,16 @@
 			<Add directory="C:/freeglut-MinGW/freeglut/lib" />
 		</Linker>
 		<Unit filename="FastNoiseLite.h" />
+		<Unit filename="GameApplication.cpp" />
+		<Unit filename="GameApplication.hpp" />
+		<Unit filename="KeyboardManager.cpp" />
+		<Unit filename="KeyboardManager.hpp" />
+		<Unit filename="MainMenu.cpp" />
+		<Unit filename="MainMenu.hpp" />
+		<Unit filename="MenuRenderer.cpp" />
+		<Unit filename="MenuRenderer.hpp" />
+		<Unit filename="MouseManager.cpp" />
+		<Unit filename="MouseManager.hpp" />
 		<Unit filename="WorldGenerator.cpp" />
 		<Unit filename="WorldGenerator.h" />
 		<Unit filename="main.cpp" />

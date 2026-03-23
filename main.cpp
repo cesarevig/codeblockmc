@@ -7,7 +7,21 @@
 */
 
 #include "WorldGenerator.h"
+#include "GameApplication.hpp"
+#include "MenuRenderer.hpp"
+#include "MouseManager.hpp"
+#include "KeyboardManager.hpp"
+
+// Librerie Standard C++ (Utility)
 #include <iostream>
+#include <string>
+#include <functional> // Necessario per convertire il Seed con std::hash
+#include <GL/freeglut.h> // <--- INDISPENSABILE per OpenGL e GLUT
+#include <string>        // <--- INDISPENSABILE per std::string
+
+// Queste variabili tengono traccia di cosa succede
+GameState currentState = GameState::MAIN_MENU;
+WorldData newWorld;
 
 int main() {
     // 1. Configurazione Noise
@@ -33,6 +47,8 @@ int main() {
     std::cout << "Premi un tasto per uscire..." << std::endl;
     std::cin.get();
 
-    exit(0);
-}
+    void drawInputBox(int x, int y, int width, int height, std::string text, bool isActive);
 
+
+    return 0;
+}
